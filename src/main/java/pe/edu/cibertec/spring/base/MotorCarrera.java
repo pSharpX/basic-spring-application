@@ -1,0 +1,25 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package pe.edu.cibertec.spring.base;
+
+/**
+ *
+ * @author Java-LM
+ */
+public class MotorCarrera implements Motor{
+
+    private final String sonidoInicial;
+
+    public MotorCarrera(String sonidoInicial) {
+        this.sonidoInicial = sonidoInicial;
+    }    
+    
+    @Override
+    public void encender() {
+        System.out.println("Encendiendo motor carrera !!" + sonidoInicial);
+    }
+    
+}
